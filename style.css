@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 400px;
+    margin: 0 auto;
+}
+
+section {
+    margin: 10px 0;
+    border: 5px solid black;
+}
+
+h2 {
+    padding: 5px;
+    background: black;
+    color: white;
+}
+
+button {
+    display: block;
+    padding: 5px;
+    margin: 10px auto;
+}
+
+.brick-layout {
+    padding: 10px;
+    box-sizing: content-box;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.brick {
+    min-height: 80px;
+    min-width: 100px;
+    border: 1px solid lightgray;
+}
+
+.color-aqua {
+    background: aqua;
+}
+
+.color-yellow {
+    background: yellow;
+}
+
+.color-fuchsia {
+    background: fuchsia;
+}
+
+.brick-layout .color-aqua:nth-child(2),
+.brick-layout .color-yellow:nth-child(4),
+.brick-layout .color-yellow:nth-child(6),
+.brick-layout .color-fuchsia:nth-child(8) {
+    flex-grow: 1;
+}
+
+.example {
+    height: 270px;
+    background-image: url("https://github.com/Irina-64/web-programming-homeworks/blob/main/img/flex-cards.png?raw=true");
+    background-size: 100% 100%;
+}
+
+p {
+    padding: 5px;
+    background: black;
+    color: white;
+}
